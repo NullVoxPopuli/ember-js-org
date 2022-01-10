@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ember.JS</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Ember.JS: a framework for ambitious developers" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://emberjs.com/images/favicon.png" />
+
+  <!--
+      This the source of truth for the ember brand variables
+        https://emberjs.com/images/brand/Ember-Brand-Guidelines.pdf
+    -->
+  <style type="text/css">
+    :root {
+      --ember-brand: #E04E39;
+      --ember-black: #212121;
+      --ember-burnt-ember: #9b2918;
+      --ember-gray: #817f7f;
+      --ember-blue: #1e719b;
+      --ember-faint-gray: #efebea;
+      --ember-light-blue: #74b0ce;
+      --ember-linen: #fdf7f6;
+      --ember-yellow: #fbc840;
+      --ember-white: #fdfdfd;
+
+      /* taken from emberjs.com */
+      --color-white: #fff;
+      --color-brand-hc-dark: #CF2d20;
+      --radius: 0.3125rem;
+      --spacing-1: 0.5625rem;
+      --spacing-2: 1.125rem;
+      --spacing-3: 1.6875rem;
+      --spacing-6: 4.5rem;
+      --grid-margin: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-md: 1.0625rem;
+      --font-size-lg: 1.25rem;
+      --font-size-xl: 2.25rem;
+      --font-size-hero-1: 3rem;
+      --font-size-hero-2: 1.125rem;
+      --font-weight-1: 200;
+      --font-weight-2: 400;
+      --font-weight-3: 600;
+      --line-height-xs: calc(16 / 14);
+      --line-height-base: 1.6875;
+      --line-height-md: calc(27 / 17);
+      --line-height-lg: 1.35;
+      --line-height-xl: 1.25;
+      --line-height-hero-1: 1.125;
+      --line-height-hero-2: 1.5;
+      --color-button-text: var(--color-white);
+      --color-button-bg: var(--ember-brand);
+      --color-button-bg-hover: var(--color-brand-hc-dark);
+      --container-width: 60.75rem;
+    }
+
+    body {
+      background: var(--ember-black);
+      color: var(--ember-white);
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      display: block;
+      color: var(--color-button-text);
+      background: var(--ember-brand);
+      text-decoration: none;
+      font-size: var(--font-size-md);
+      padding: var(--spacing-1) var(--spacing-3);
+      border-radius: var(--radius);
+      line-height: var(--line-height-md);
+      transition: background-color .2s, color .1s;
+    }
+    a:hover {
+      background: var(--color-brand-hc-dark);
+    }
+
+    *:focus-visible {
+      outline: none;
+      border-radius: var(--radius);
+      box-shadow: var(--ember-black) 0px 0px 0px 3px, var(--ember-brand) 0px 0px 0px 6px, var(--ember-burnt-ember) 0px 2px 2px 7px
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      gap: var(--spacing-3);
+      align-items: center;
+      max-width: var(--container-width);
+      padding: var(--spacing-6) var(--grid-margin);
+    }
+
+    .text-hero-xl {
+      font-size: var(--font-size-hero-1);
+      line-height: var(--line-height-hero-1);
+      font-weight: var(--font-weight-1);
+    }
+    .text-hero-base {
+      font-size: var(--font-size-hero-2);
+      line-height: var(--line-height-hero-2);
+      font-weight: var(--font-weight-2);
+    }
+    .mb-2 {
+      margin-bottom: var(--spacing-2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1 class="text-hero-xl" id="hero-title">
+        <img class="navbar-brand" src="https://emberjs.com/images/ember-logo.svg" alt="" width="415" height="200">
+        <br>
+        A framework for ambitious <br class="hide-on-mobile">web developers.
+      </h1>
+      <p class="text-hero-base mb-2">
+        Ember.js is a productive,
+        battle-tested JavaScript framework for building modern web applications.
+        It includes everything you need to build rich UIs that work on any device.
+      </p>
+    </header>
+
+    <a href="https://emberjs.com/">
+      Visit Ember.JS
+      <br>
+      https://emberjs.com/
+    </a>
+  </div>
+
+</body>
+</html>
