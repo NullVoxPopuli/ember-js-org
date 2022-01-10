@@ -24,6 +24,9 @@
       --ember-yellow: #fbc840;
       --ember-white: #fdfdfd;
 
+      --logo-height: 200px;
+      --logo-width: 415px;
+
       /* taken from emberjs.com */
       --color-white: #fff;
       --color-brand-hc-dark: #CF2d20;
@@ -117,6 +120,46 @@
     }
     .mb-2 {
       margin-bottom: var(--spacing-2);
+    }
+
+    .navbar-brand {
+      width: var(--logo-width);
+      height: var(--logo-height);
+    }
+
+    @media only screen and (max-width: 500px) {
+      :root {
+        --logo-height: 100px;
+        --logo-width: 207.5px;
+
+        --font-size-sm: 0.8125rem;
+        --font-size-base: 0.9375rem;
+        --font-size-md: 0.9375rem;
+        --font-size-lg: 1.1875rem;
+        --font-size-xl: 1.5625rem;
+        --font-size-hero-1: 1.8754rem;
+        --font-size-hero-2: 0.9375rem;
+        --line-height-xs: calc(16 / 13);
+        --line-height-base: 1.6;
+        --line-height-md: 1.6;
+        --line-height-lg: calc(24 / 19);
+        --line-height-xl: 2;
+        --line-height-hero-1: calc(32 / 30);
+        --line-height-hero-2: 1.6;
+        --font-weight-1: 200;
+        --font-weight-2: 400;
+        --font-weight-3: 600;
+        --spacing-1: 0.5rem;
+        --spacing-2: 1rem;
+        --spacing-3: 1.5rem;
+        --spacing-4: 2.5rem;
+        --spacing-5: 3.5rem;
+        --spacing-6: 4rem;
+      }
+
+      .hide-on-mobile {
+        display: none;
+      }
     }
   </style>
 </head>
