@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Ember.JS</title>
   <meta charset="utf-8">
@@ -29,6 +29,7 @@
 
       /* taken from emberjs.com */
       --color-white: #fff;
+      --color-button-bg: var(--ember-brand);
       --color-brand-hc-dark: #CF2d20;
       --radius: 0.3125rem;
       --spacing-1: 0.5625rem;
@@ -64,18 +65,19 @@
       color: var(--ember-white);
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
     }
 
     a {
       display: block;
       color: var(--color-button-text);
-      background: var(--ember-brand);
+      background: var(--color-button-bg);
       text-decoration: none;
+      font-weight: 600;
       font-size: var(--font-size-md);
       padding: var(--spacing-1) var(--spacing-3);
       border-radius: var(--radius);
-      line-height: var(--line-height-md);
+      line-height: var(--line-height-sm);
       transition: background-color .2s, color .1s;
     }
     a:hover {
